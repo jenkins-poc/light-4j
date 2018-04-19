@@ -42,8 +42,8 @@ import java.util.concurrent.atomic.AtomicReference;
 /**
  * Created by steve on 01/09/16.
  */
-public class ServerInfoGetHandlerTest {
-    static final Logger logger = LoggerFactory.getLogger(ServerInfoGetHandlerTest.class);
+public class ServerInfoGetHandler2Test {
+    static final Logger logger = LoggerFactory.getLogger(ServerInfoGetHandler2Test.class);
 
     static Undertow server = null;
 
@@ -74,7 +74,7 @@ public class ServerInfoGetHandlerTest {
     }
 
     static RoutingHandler getTestHandler() {
-        return Handlers.routing().add(Methods.GET, "/server/info", new ServerInfoGetHandler());
+        return Handlers.routing().add(Methods.GET, "/server/info", new ServerInfoGetHandler2());
     }
 
     @Test
