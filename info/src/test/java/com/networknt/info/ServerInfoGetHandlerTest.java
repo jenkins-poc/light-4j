@@ -74,7 +74,7 @@ public class ServerInfoGetHandlerTest {
     }
 
     static RoutingHandler getTestHandler() {
-        return Handlers.routing().add(Methods.GET, "/server/info", new ServerInfoGetHandler());
+        return Handlers.routing().add(Methods.GET, "/server/info", new ServerInfoGetHandler1());
     }
 
     @Test

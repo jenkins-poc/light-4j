@@ -45,14 +45,14 @@ import java.util.Properties;
  *
  * @author Steve Hu
  */
-public class ServerInfoGetHandler implements HttpHandler {
+public class ServerInfoGetHandler1 implements HttpHandler {
     public static final String CONFIG_NAME = "info";
 
     static final String STATUS_SERVER_INFO_DISABLED = "ERR10013";
 
-    static final Logger logger = LoggerFactory.getLogger(ServerInfoGetHandler.class);
+    static final Logger logger = LoggerFactory.getLogger(ServerInfoGetHandler1.class);
 
-    public ServerInfoGetHandler(){}
+    public ServerInfoGetHandler1(){}
 
     @Override
     public void handleRequest(final HttpServerExchange exchange) throws Exception {

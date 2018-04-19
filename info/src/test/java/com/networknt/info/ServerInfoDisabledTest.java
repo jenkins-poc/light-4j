@@ -107,7 +107,7 @@ public class ServerInfoDisabledTest {
     }
 
     static RoutingHandler getTestHandler() {
-        return Handlers.routing().add(Methods.GET, "/v1/server/info", new ServerInfoGetHandler());
+        return Handlers.routing().add(Methods.GET, "/v1/server/info", new ServerInfoGetHandler1());
     }
 
     @Test
